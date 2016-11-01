@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<RelativeLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.abans_000.docplus.SignOthers">
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:background="#fa0505"
+        android:id="@+id/textView21" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21" android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearlay">
+      <!--  <TableRow android:layout_width="fill_parent"> -->
+
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/tn"
+                    />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tn"
+                    android:layout_toEndOf="@id/tn"
+                    android:id="@+id/otname"
+                    />
+            </RelativeLayout>
+       <!-- </TableRow> -->
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/tem"
+                />
+
+          <!--  <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText3"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tem"
+                android:layout_toEndOf="@+id/tem" /> -->
+                <EditText
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_toRightOf="@+id/tem"
+                    android:layout_toEndOf="@+id/tem"
+                     android:id="@+id/otemail"
+                     />
+
+        </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/tpw"
+                />
+            <EditText android:inputType="textPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tpw"
+                android:layout_toEndOf="@+id/tpw"
+                android:id="@+id/otpassword"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textSize="20dp"
+                android:id="@+id/tcp"
+                android:textColor="#000000"
+                />
+            <EditText android:inputType="textPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tcp"
+                android:layout_toEndOf="@id/tcp"
+                android:id="@+id/otcnfpassword"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:id="@+id/ta"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+            <EditText
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ta"
+                android:layout_toEndOf="@id/ta"
+                android:id="@+id/otage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/otage"
+                android:layout_toEndOf="@id/otage"
+                android:text="Sex"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/ts"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/ts"
+                android:layout_toEndOf="@+id/ts">
+                <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/female"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:id="@+id/tg"/>
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="D.O.B"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:id="@+id/tdob"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tdob"
+            android:layout_toEndOf="@+id/tdob"
+            android:id="@+id/otdate"
+            android:hint="dd/mm/yyyy"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/tad"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tad"
+                android:layout_toEndOf="@+id/tad"
+                android:id="@+id/otaddress"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/tm"
+                />
+
+            <EditText
+                android:inputType="phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tm"
+                android:layout_toEndOf="@+id/tm"
+                android:id="@+id/otmobile"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign  Up"
+        android:id="@+id/otsignup"
+        android:layout_below="@+id/linearlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--  <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="New Button"
+          android:id="@+id/button5"
+          android:layout_gravity="center_horizontal"
+          android:layout_alignBottom="@+id/linearlay"
+          android:layout_centerHorizontal="true"
+          android:layout_toStartOf="@+id/linearlay"
+          />
+          -->
+
+</RelativeLayout>
+</ScrollView>
